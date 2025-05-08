@@ -1,21 +1,25 @@
-// Theme toggle
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => {
-  if (document.documentElement.classList.contains('dark')) {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-  } else {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  }
-});
-
-// Load theme on start
-if (localStorage.getItem('theme') === 'dark') {
+// Default dark mode on load
+if (!localStorage.getItem('theme') || localStorage.getItem('theme') === 'dark') {
   document.documentElement.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+} else {
+  document.documentElement.classList.remove('dark');
 }
 
-// Smooth scroll for internal links
+// Theme toggle and icon update
+const toggle = document.getElementById('theme-toggle');
+const updateToggleIcon = () => {
+  toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+};
+updateToggleIcon();
+
+toggle.addEventListener('click', () => {
+  const isDark = document.documentElement.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateToggleIcon();
+});
+
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
