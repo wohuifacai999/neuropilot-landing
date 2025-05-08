@@ -22,8 +22,33 @@
   </nav>
 
   <main style="padding: 2rem">
-    <h1>FAQ</h1>
-    <p>This section will be updated soon.</p>
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What is NeuroPilot?</button>
+        <div class="faq-answer">
+          <p>NeuroPilot is your intelligent AI co-pilot for turning startup dreams into reality. It helps you plan, execute, and adapt in real-time.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is it free to try?</button>
+        <div class="faq-answer">
+          <p>Yes, early users will gain free access during the pilot phase and receive exclusive benefits.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How is NeuroPilot different from ChatGPT?</button>
+        <div class="faq-answer">
+          <p>Unlike ChatGPT, NeuroPilot is structured around startup execution. It includes memory, goal decomposition, task planning, and feedback loops tailored for founders.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I integrate my tools?</button>
+        <div class="faq-answer">
+          <p>Future versions will offer integrations with popular tools like Notion, Slack, Trello, and GitHub.</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -31,9 +56,16 @@
   </footer>
 
   <script>
-    document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.getElementById('theme-toggle').addEventListener('click', () => {{
       document.body.classList.toggle('dark-mode');
-    });
+    }});
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {{
+      q.addEventListener('click', () => {{
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      }});
+    }});
   </script>
 </body>
 </html>
