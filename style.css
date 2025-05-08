@@ -1,62 +1,107 @@
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0d1117;
-  color: #c9d1d9;
+  padding: 0;
+  background-color: #f4f4f8;
+  color: #333;
 }
-body.light {
-  background: #ffffff;
-  color: #000000;
-}
-header {
+
+.navbar {
+  background-color: #000;
+  color: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #161b22;
 }
-.logo {
-  height: 40px;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  color: inherit;
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
   text-decoration: none;
 }
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 1rem;
+
+.navbar-brand span {
+  color: #00ffd5;
 }
-.subtitle {
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
   text-align: center;
+  padding: 4rem 2rem;
+}
+
+.slogan {
   font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
 }
-.feature, .cta {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+
+.tagline {
+  font-size: 1rem;
+  color: #777;
 }
-.btn {
-  padding: 0.5rem 1.2rem;
-  background: #238636;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 0.5rem;
+
+.features {
+  padding: 3rem 2rem;
+  background-color: #fff;
 }
-input[type="email"] {
-  padding: 0.5rem;
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+  color: #111;
+}
+
+.waitlist {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.waitlist form {
   margin-top: 1rem;
 }
+
+.waitlist input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  width: 250px;
+}
+
+.waitlist button {
+  padding: 0.5rem 1rem;
+  background-color: #00ffd5;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
 }

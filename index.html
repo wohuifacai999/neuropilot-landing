@@ -1,81 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroPilot - Your AI Co-pilot for Building Startups</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="https://speed-insights.vercel.app/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroPilot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Neuro<span>Pilot</span></a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Papers</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
-            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="papers.html">Papers</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header class="hero">
+    <h1>NeuroPilot</h1>
+    <p class="slogan">You build the dream. It builds the path.</p>
+    <p class="tagline">Your AI co-pilot for building startups.</p>
+  </header>
 
-    <header class="hero-section" style="background-image: url('images/hero-bg-placeholder.jpg');">
-        <div class="container">
-            <h1>NeuroPilot</h1>
-            <p class="subtitle">You build the dream. It builds the path.</p>
-            <p class="intro-text">Your AI co-pilot for building startups.</p>
-        </div>
-    </header>
+  <section class="features">
+    <h2>Core Advantages</h2>
+    <div class="feature">
+      <h3>💡 Structured Execution</h3>
+      <p>Break down complex goals into actionable steps with clarity and progress.</p>
+    </div>
+    <div class="feature">
+      <h3>🧠 Memory Engine</h3>
+      <p>Retain context and learnings to make conversations smarter over time.</p>
+    </div>
+    <div class="feature">
+      <h3>💬 Adaptive Dialogue</h3>
+      <p>Refine ideas, solve problems, and strategize through multi-turn conversations.</p>
+    </div>
+  </section>
 
-    <section class="value-prop-section section">
-        <div class="container">
-            <h2 class="section-title">Core Advantages</h2>
-            <div class="value-prop-grid">
-                <div class="value-prop-item">
-                    <div class="icon-placeholder">💡</div>
-                    <h3>Structured Execution</h3>
-                    <p>NeuroPilot helps you break down complex goals into actionable steps, ensuring clarity and progress.</p>
-                </div>
-                <div class="value-prop-item">
-                    <div class="icon-placeholder">🧠</div>
-                    <h3>Memory Engine</h3>
-                    <p>Our advanced memory system retains context and learnings, making interactions more intelligent over time.</p>
-                </div>
-                <div class="value-prop-item">
-                    <div class="icon-placeholder">💬</div>
-                    <h3>Adaptive Dialogue</h3>
-                    <p>Engage in natural, multi-turn conversations to refine ideas, solve problems, and plan strategies.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="waitlist">
+    <h2>Join the Waitlist</h2>
+    <p>Be the first to experience NeuroPilot.</p>
+    <form>
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit">Join</button>
+    </form>
+  </section>
 
-    <section class="waitlist-section section">
-        <div class="container">
-            <h2 class="section-title">Join the Waitlist</h2>
-            <p>Be the first to experience NeuroPilot and revolutionize your startup journey.</p>
-            <form action="YOUR_FORMSPREE_OR_OTHER_ENDPOINT" method="POST" class="waitlist-form">
-                <input type="email" name="email" placeholder="Enter your email address" required>
-                <button type="submit" class="btn">Join Waitlist</button>
-            </form>
-            <p style="font-size: 0.8em; margin-top:15px;">We respect your privacy. No spam, ever.</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+  <footer>
+    <p>© 2025 NeuroPilot. All rights reserved.</p>
+  </footer>
 </body>
 </html>
