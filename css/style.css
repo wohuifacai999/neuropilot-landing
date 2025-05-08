@@ -223,3 +223,18 @@ html.dark .slogan {
   border: none !important;
   text-decoration: none !important;
 }
+
+
+/* Hide underline from slogan and buttons */
+html.dark .slogan,
+html.dark .btn {
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* Gradient text for NeuroPilot brand in dark mode */
+html.dark .logo svg text {
+  fill: url(#neuro-gradient);
+}
+
+/* Add gradient definition inside SVG via JS or directly */
