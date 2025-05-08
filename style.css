@@ -105,3 +105,52 @@ footer {
   background-color: #000;
   color: #fff;
 }
+
+
+/* 🌑 Dark Mode */
+body.dark-mode {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark-mode .nav-links a {
+  color: #fff;
+}
+
+body.dark-mode .hero {
+  background-color: #121212;
+}
+
+body.dark-mode .features {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .feature h3 {
+  color: #fff;
+}
+
+body.dark-mode .waitlist {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+  color: #888;
+}
+
+#theme-toggle {
+  background: none;
+  border: 2px solid #00ffd5;
+  color: #00ffd5;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
