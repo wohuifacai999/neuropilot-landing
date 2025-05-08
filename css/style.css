@@ -115,3 +115,22 @@ body.dark-mode footer {
 .feature h3 {
   font-size: 1.3rem;
 }
+
+.feature-block {
+  margin-bottom: 3rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-block h2 {
+  font-size: 1.5rem;
+  color: #00ffd5;
+  margin-bottom: 0.5rem;
+}
+.feature-block p {
+  line-height: 1.6;
+  color: #ccc;
+}
+body.dark-mode .feature-block h2 {
+  color: #00ffd5;
+}
