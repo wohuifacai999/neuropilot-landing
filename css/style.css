@@ -202,3 +202,9 @@ html.dark .hero {
   flex-direction: column;
   align-items: center;
 }
+
+
+/* Dark mode 'What Founders Say' purple gradient */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #e0bbff 0%, #bb86fc 100%) !important;
+}
