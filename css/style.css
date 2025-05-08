@@ -188,3 +188,9 @@ body {
   color: var(--text-color);
   font-weight: 500;
 }
+
+
+/* Dark mode hero gradient override */
+html.dark .hero {
+  background: linear-gradient(135deg, #bb86fc 0%, #000000 100%);
+}
