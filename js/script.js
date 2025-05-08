@@ -46,3 +46,8 @@ if (contactForm) {
     this.reset();
   });
 }
+
+
+function toggleFeature(card) {
+  card.classList.toggle('active');
+}

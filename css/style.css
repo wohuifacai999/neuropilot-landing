@@ -256,3 +256,17 @@ html.dark .hero {
   text-decoration: none !important;
   border: none !important;
 }
+
+
+/* Expandable feature details */
+.feature-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.feature-card.active .feature-details {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 1rem;
+}
