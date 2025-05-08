@@ -219,3 +219,17 @@ body:not(.dark-mode) .faq-answer {
 body:not(.dark-mode) .about-section p {
   color: #444;
 }
+
+.navbar-centered {
+  text-align: center;
+}
+.container-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-slogan {
+  margin: 0.5rem 0 1rem;
+  color: #aaa;
+  font-style: italic;
+}
