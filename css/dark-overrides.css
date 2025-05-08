@@ -1,0 +1,9 @@
+/* Dark mode testimonials gradient override */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #bb86fc 0%, #6c63ff 100%);
+}
+
+/* Dark mode logo color to blue */
+html.dark .logo svg text {
+  fill: #2196f3;
+}
