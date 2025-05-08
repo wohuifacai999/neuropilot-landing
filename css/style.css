@@ -233,3 +233,35 @@ body:not(.dark-mode) .about-section p {
   color: #aaa;
   font-style: italic;
 }
+
+.navbar-flex {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+.navbar-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar-slogan {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+.logo-black {
+  color: #fff;
+}
+.logo-purple {
+  color: #a56eff;
+}
