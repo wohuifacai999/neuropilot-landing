@@ -1,64 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NeuroPilot</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroPilot | You build the dream. It builds the path.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <img src="neuro_logo.png" alt="NeuroPilot Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="theme-toggle">Toggle Theme</button>
-  </header>
-
-  <main>
-    <h1>NEUROPILOT</h1>
-    <p class="subtitle">You build the dream. It builds the path.</p>
-
-    <section class="feature">
-      <h2>🧠 Intelligent Goal Decomposition</h2>
-      <p>Transform ambitious visions into actionable, step-by-step plans.</p>
-      <a class="btn" href="#">Learn More</a>
-    </section>
-
-    <section class="feature">
-      <h2>🧬 Memory-Enhanced Conversations</h2>
-      <p>Your AI remembers key insights from your past decisions—like a co-founder.</p>
-      <a class="btn" href="#">Learn More</a>
-    </section>
-
-    <section class="feature">
-      <h2>🚀 Execution Co-Pilot</h2>
-      <p>From idea to action: Daily prioritized tasks driven by your long-term vision.</p>
-      <a class="btn" href="#">Learn More</a>
-    </section>
-
-    <section class="cta">
-      <p><strong>Be the first to experience the AI Co-Founder</strong></p>
-      <input type="email" placeholder="you@example.com" />
-      <button class="btn">Join the Waitlist</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 NeuroPilot. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById("theme-toggle").onclick = () => {
-      document.body.classList.toggle("light");
-    };
-  </script>
+<body class="dark">
+    <header>
+        <h1>NeuroPilot</h1>
+        <p class="slogan">You build the dream. It builds the path.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="papers.html">Papers</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to your AI Co-Pilot</h2>
+            <p>Startups need more than tools — they need a second brain. NeuroPilot helps you plan, remember, and build smarter.</p>
+            <form class="waitlist">
+                <input type="email" placeholder="Enter your email to join the waitlist" required>
+                <button type="submit">Join the Waitlist</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+    </footer>
 </body>
 </html>
