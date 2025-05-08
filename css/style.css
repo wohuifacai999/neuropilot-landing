@@ -306,3 +306,22 @@ html.dark .hero {
     top: 1.2rem;
   }
 }
+
+
+/* Adjust nav toggle to be on the left in mobile view */
+@media (max-width: 768px) {
+  .nav-toggle {
+    left: 1.5rem;
+    right: auto;
+    color: #66ccff; /* soft blue */
+  }
+}
+
+
+/* Place nav-toggle truly at the left edge */
+@media (max-width: 768px) {
+  .nav-toggle {
+    left: 0;
+    padding-left: 0.5rem;
+  }
+}
