@@ -249,3 +249,10 @@ html.dark .testimonials {
 html.dark .hero {
   background: linear-gradient(135deg, #e6ccff 0%, #c89aff 100%) !important;
 }
+
+
+/* Remove underline from slogan in all modes */
+.slogan {
+  text-decoration: none !important;
+  border: none !important;
+}
