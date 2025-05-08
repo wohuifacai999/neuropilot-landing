@@ -1,0 +1,4 @@
+/* Override for dark mode "What Founders Say" section */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #e0bbff 0%, #bb86fc 100%) !important;
+}
