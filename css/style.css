@@ -238,3 +238,14 @@ html.dark .logo svg text {
 }
 
 /* Add gradient definition inside SVG via JS or directly */
+
+
+/* Deep purple for 'What Founders Say' section in dark mode */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #6c33a3 0%, #3e1f5c 100%) !important;
+}
+
+/* Light purple for hero (Welcome section) in dark mode */
+html.dark .hero {
+  background: linear-gradient(135deg, #e6ccff 0%, #c89aff 100%) !important;
+}
