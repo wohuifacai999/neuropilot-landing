@@ -336,3 +336,11 @@ html.dark .hero {
     line-height: 1;
   }
 }
+
+
+/* Fine-tune nav-toggle vertical alignment to match theme toggle */
+@media (max-width: 768px) {
+  .nav-toggle {
+    top: 1.5rem;
+  }
+}
