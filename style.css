@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0b0c10;
+    color: #f1f1f1;
+    text-align: center;
+}
+header {
+    padding: 40px 20px;
+    background: #1f2833;
+}
+.slogan {
+    font-size: 1.2em;
+    color: #66fcf1;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #45a29e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #0b0c10;
+    padding: 40px 20px;
+}
+.feature {
+    flex: 1 1 300px;
+    margin: 20px;
+    background: #1f2833;
+    padding: 20px;
+    border-radius: 10px;
+}
+.vision {
+    background: #0b0c10;
+    padding: 40px 20px;
+}
+.socials {
+    padding: 20px;
+    background: #1f2833;
+}
+.icons img {
+    width: 32px;
+    margin: 0 10px;
+    filter: invert(100%);
+}
+.cta {
+    background: #45a29e;
+    padding: 40px 20px;
+    color: #0b0c10;
+}
+footer {
+    background: #0b0c10;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
