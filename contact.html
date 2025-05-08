@@ -22,8 +22,20 @@
   </nav>
 
   <main style="padding: 2rem">
-    <h1>Contact</h1>
-    <p>This section will be updated soon.</p>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Fill out the form and we’ll be in touch shortly.</p>
+    <form action="https://formspree.io/f/mwkgnvzb" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
