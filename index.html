@@ -2,59 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroPilot – Your AI Second Brain</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroPilot | AI Second Brain for Founders</title>
+  <meta name="description" content="Turn your vision into execution. NeuroPilot is your memory-enabled, strategy-driven AI co-founder. Join the waitlist.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="NeuroPilot | AI Second Brain for Founders" />
+  <meta property="og:description" content="Your AI co-founder. Memory. Strategy. Execution." />
+  <meta property="og:image" content="https://neuropilotai.com/og-image.jpg" />
+  <meta property="og:url" content="https://neuropilotai.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { background-color: #0e0e14; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; }
+    header { padding: 2rem; }
+    header img { width: 160px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p.slogan { font-size: 1rem; color: #88c0d0; }
+    .features { display: flex; flex-direction: column; gap: 1.5rem; max-width: 700px; margin: 2rem auto; }
+    .feature { background-color: #1c1c26; padding: 1rem; border-radius: 10px; position: relative; }
+    .feature h2 { margin-top: 0; }
+    .learn-more { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #3b82f6; color: white; border-radius: 6px; text-decoration: none; font-size: 0.9rem; }
+    .waitlist { margin: 3rem 0; }
+    .waitlist input[type="email"] { padding: 0.6rem; width: 260px; border: none; border-radius: 5px; margin-right: 1rem; }
+    .waitlist button { padding: 0.6rem 1.2rem; background: #10b981; border: none; color: white; border-radius: 5px; cursor: pointer; }
+    footer { margin-top: 2rem; color: #777; font-size: 0.8rem; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>NeuroPilot</h1>
-        <p class="slogan">You build the dream. It builds the path.</p>
-        <a href="#waitlist" class="cta-button">Join Waitlist</a>
-    </header>
+  <header>
+    <img src="neuro_logo.png" alt="NeuroPilot Logo" />
+    <h1>NEUROPILOT</h1>
+    <p class="slogan">You build the dream. It builds the path.</p>
+  </header>
 
-    <section class="features">
-        <div class="feature">
-            <h3>🎯 Intelligent Goal Decomposition</h3>
-            <p>Turn ambitious visions into actionable, step-by-step plans. Automatically.</p>
-        </div>
-        <div class="feature">
-            <h3>🧠 Memory-Enhanced Conversations</h3>
-            <p>Your AI remembers past interactions, decisions, and projects—like a real co-founder.</p>
-        </div>
-        <div class="feature">
-            <h3>🚀 Execution Co-Pilot</h3>
-            <p>From idea to action: Get daily prioritized tasks driven by your long-term goals.</p>
-        </div>
-    </section>
+  <section class="features">
+    <div class="feature">
+      <h2>🧠 Intelligent Goal Decomposition</h2>
+      <p>Transform ambitious visions into actionable, step-by-step plans.</p>
+      <a href="#" class="learn-more" onclick="alert('NeuroPilot intelligently breaks down any goal you set into prioritized, achievable tasks, just like a real executive strategist.')">Learn More</a>
+    </div>
+    <div class="feature">
+      <h2>🧬 Memory-Enhanced Conversations</h2>
+      <p>Your AI remembers key insights from your past decisions, just like a co-founder.</p>
+      <a href="#" class="learn-more" onclick="alert('NeuroPilot stores long-term context, so your conversations evolve intelligently over time.')">Learn More</a>
+    </div>
+    <div class="feature">
+      <h2>🚀 Execution Co-Pilot</h2>
+      <p>From vision to daily focus. Get smart task flow guided by your strategy.</p>
+      <a href="#" class="learn-more" onclick="alert('NeuroPilot helps you stay on track with adaptive task planning and action suggestions.')">Learn More</a>
+    </div>
+  </section>
 
-    <section class="vision">
-        <h2>From Chaos to Clarity</h2>
-        <p>Startups are messy. Founding is lonely. NeuroPilot brings focus, structure, and support—built for those who dare to create.</p>
-    </section>
+  <section class="waitlist">
+    <h2>Join the Waitlist</h2>
+    <form action="https://formspree.io/f/moqgqwaz" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
 
-    <section class="socials">
-        <h2>Follow Us</h2>
-        <div class="icons">
-            <a href="#"><img src="assets/tiktok.svg" alt="TikTok"></a>
-            <a href="#"><img src="assets/youtube.svg" alt="YouTube"></a>
-            <a href="#"><img src="assets/x.svg" alt="X (Twitter)"></a>
-            <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
-            <a href="#"><img src="#"><img src="assets/discord.svg" alt="Discord"></a>
-        </div>
-    </section>
-
-    <section id="waitlist" class="cta">
-        <h2>Join the Founders' Waitlist</h2>
-        <p>We're onboarding a select group of early adopters to shape the future of AI-driven entrepreneurship.</p>
-        <a class="cta-button" href="https://forms.gle/YOUR_GOOGLE_FORM" target="_blank">Request Access</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Neuroverse Inc. All rights reserved.</p>
-        <p>Email: contact@neuropilotai.com</p>
-    </footer>
+  <footer>
+    &copy; 2025 NeuroPilot. All rights reserved.
+  </footer>
 </body>
 </html>
