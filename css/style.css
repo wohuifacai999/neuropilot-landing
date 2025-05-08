@@ -23,7 +23,7 @@ body {
   text-decoration: none;
 }
 .navbar-brand span {
-  color: #00ffd5;
+  color: #a56eff;
 }
 .nav-links {
   list-style: none;
@@ -59,8 +59,8 @@ body.dark-mode footer {
 }
 #theme-toggle {
   background: none;
-  border: 2px solid #00ffd5;
-  color: #00ffd5;
+  border: 2px solid #a56eff;
+  color: #a56eff;
   border-radius: 20px;
   padding: 6px 12px;
   cursor: pointer;
@@ -69,7 +69,7 @@ body.dark-mode footer {
   transition: all 0.3s ease;
 }
 #theme-toggle:hover {
-  background-color: #00ffd5;
+  background-color: #a56eff;
   color: black;
 }
 
@@ -90,7 +90,7 @@ body.dark-mode footer {
   margin-bottom: 1.5rem;
 }
 .cta-button {
-  background-color: #00ffd5;
+  background-color: #a56eff;
   padding: 0.75rem 1.5rem;
   color: black;
   text-decoration: none;
@@ -99,7 +99,7 @@ body.dark-mode footer {
   transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-  background-color: #00dab0;
+  background-color: #9047f8;
 }
 .features-section {
   padding: 2rem 2rem 4rem;
@@ -124,7 +124,7 @@ body.dark-mode footer {
 }
 .feature-block h2 {
   font-size: 1.5rem;
-  color: #00ffd5;
+  color: #a56eff;
   margin-bottom: 0.5rem;
 }
 .feature-block p {
@@ -132,5 +132,5 @@ body.dark-mode footer {
   color: #ccc;
 }
 body.dark-mode .feature-block h2 {
-  color: #00ffd5;
+  color: #a56eff;
 }
