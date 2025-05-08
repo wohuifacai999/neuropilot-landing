@@ -194,3 +194,11 @@ body {
 html.dark .hero {
   background: linear-gradient(135deg, #bb86fc 0%, #000000 100%);
 }
+
+
+/* Logo container: stack logo and slogan vertically */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
