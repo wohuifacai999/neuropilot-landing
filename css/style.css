@@ -208,3 +208,18 @@ html.dark .hero {
 html.dark .testimonials {
   background: linear-gradient(135deg, #e0bbff 0%, #bb86fc 100%) !important;
 }
+
+
+/* Gradient text color for logo and slogan in dark mode */
+html.dark .logo svg text,
+html.dark .slogan {
+  background: linear-gradient(135deg, #e0bbff, #bb86fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Remove underline or border from slogan */
+html.dark .slogan {
+  border: none !important;
+  text-decoration: none !important;
+}
