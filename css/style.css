@@ -344,3 +344,17 @@ html.dark .hero {
     top: 1.5rem;
   }
 }
+
+
+/* Make case-cards expandable like feature-cards */
+.case-card .feature-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.case-card.active .feature-details {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 1rem;
+}
