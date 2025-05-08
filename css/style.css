@@ -37,100 +37,54 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-.hero {
+.hero {{
   text-align: center;
   padding: 4rem 2rem;
-}
-.slogan {
+}}
+.slogan {{
   font-size: 1.2rem;
   font-weight: bold;
   color: #555;
-}
-.tagline {
+}}
+.tagline {{
   font-size: 1.1rem;
   color: #777;
-}
-.features {
+}}
+.features {{
   padding: 3rem 2rem;
   background-color: #fff;
-}
-.features h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-.feature {
-  margin-bottom: 2rem;
-}
-.feature h3 {
-  color: #111;
-  font-size: 1.3rem;
-}
-.waitlist {
+}}
+.waitlist {{
   text-align: center;
   padding: 3rem 2rem;
   background-color: #111;
   color: #fff;
-}
-.waitlist form {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-.waitlist input {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  width: 250px;
-}
-.waitlist button {
-  padding: 0.5rem 1rem;
-  background-color: #00ffd5;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.waitlist button:hover {
-  background-color: #00dab0;
-}
-footer {
+}}
+footer {{
   text-align: center;
   padding: 1rem;
   background-color: #000;
   color: #fff;
-}
-body.dark-mode {
+}}
+body.dark-mode {{
   background-color: #0a0a0a;
   color: #e0e0e0;
-}
-body.dark-mode .navbar {
+}}
+body.dark-mode .navbar {{
   background-color: #111;
-}
-body.dark-mode .nav-links a {
+}}
+body.dark-mode .nav-links a {{
   color: #fff;
-}
-body.dark-mode .hero {
-  background-color: #121212;
-}
-body.dark-mode .features {
-  background-color: #1a1a1a;
-}
-body.dark-mode .feature h3 {
-  color: #fff;
-}
-body.dark-mode .waitlist {
+}}
+body.dark-mode .waitlist {{
   background-color: #222;
   color: #fff;
-}
-body.dark-mode footer {
+}}
+body.dark-mode footer {{
   background-color: #111;
   color: #888;
-}
-#theme-toggle {
+}}
+#theme-toggle {{
   background: none;
   border: 2px solid #00ffd5;
   color: #00ffd5;
@@ -140,23 +94,8 @@ body.dark-mode footer {
   font-size: 1rem;
   margin-left: 1rem;
   transition: all 0.3s ease;
-}
-#theme-toggle:hover {
+}}
+#theme-toggle:hover {{
   background-color: #00ffd5;
   color: black;
-}
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .waitlist form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .waitlist input {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-}
+}}

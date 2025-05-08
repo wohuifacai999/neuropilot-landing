@@ -1,70 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - NeuroPilot</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="https://speed-insights.vercel.app/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faq - NeuroPilot</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌓</button>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
-            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="papers.html">Papers</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <main style="padding: 2rem">
+    <h1>Faq</h1>
+    <p>This is the faq page content. Customize it as needed.</p>
+  </main>
 
-    <main class="section">
-        <div class="container">
-            <h1 class="section-title text-center">Frequently Asked Questions</h1>
-            <div class="faq-list" style="max-width: 800px; margin: 0 auto; text-align:left;">
-                <details>
-                    <summary>什么是 NeuroPilot？</summary>
-                    <p>NeuroPilot is an AI co-pilot designed to assist entrepreneurs, innovators, and builders in navigating the complexities of starting and scaling a venture. It helps with goal decomposition, planning, execution, and maintains a memory of your project's context.</p>
-                </details>
+  <footer>
+    <p>© 2025 NeuroPilot. All rights reserved.</p>
+  </footer>
 
-                <details>
-                    <summary>谁适合使用这个产品？ (Who is this product for?)</summary>
-                    <p>NeuroPilot is ideal for startup founders, product managers, project leaders, researchers, and anyone embarking on ambitious projects that require structured thinking, planning, and execution support. If you're building something new, NeuroPilot can help.</p>
-                </details>
-
-                <details>
-                    <summary>是否免费？如何申请内测？ (Is it free? How to apply for beta access?)</summary>
-                    <p>We will have various access tiers in the future. Currently, NeuroPilot is in a closed beta phase. You can join our waitlist on the homepage to get updates and an invitation to participate in early testing programs as they become available.</p>
-                </details>
-
-                <details>
-                    <summary>是否保存用户数据？隐私怎么保障？ (Do you save user data? How is privacy ensured?)</summary>
-                    <p>Yes, to provide its core functionality like the Memory Engine, NeuroPilot needs to store project-related data you provide. We are committed to the highest standards of data privacy and security. All data is encrypted, and we will have a comprehensive privacy policy detailing our data handling practices. Your intellectual property and sensitive information are treated with utmost confidentiality.</p>
-                </details>
-
-                <details>
-                    <summary>How does NeuroPilot differ from other AI tools?</summary>
-                    <p>NeuroPilot focuses on the end-to-end journey of building, from ideation and strategic planning to structured execution. Its key differentiators are the integrated Memory Engine for contextual continuity, the Goal Decomposer for breaking down complexity, and its design as a collaborative "AI Second Brain" rather than just a task-specific tool.</p>
-                </details>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
