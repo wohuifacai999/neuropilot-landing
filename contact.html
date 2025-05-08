@@ -3,36 +3,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact | NeuroPilot</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NeuroPilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>NeuroPilot</h1>
-    <p class="slogan">You build the dream. It builds the path.</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="papers.html">Papers</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
-<main>
-    <section class="hero">
-        <h2>Contact Us</h2>
-        <p>Have a question, idea, or want to partner? Drop us a message.</p>
-        <form class="waitlist">
-            <input type="email" placeholder="Your email" required>
-            <textarea placeholder="Your message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-</footer>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title text-center">Get In Touch</h1>
+            <p class="text-center" style="max-width: 600px; margin: -20px auto 40px auto;">Have questions, feedback, or partnership inquiries? We'd love to hear from you.</p>
+
+            <div class="contact-section">
+                <form action="YOUR_FORMSPREE_OR_OTHER_ENDPOINT" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <p class="text-center" style="margin-top: 20px; font-size: 0.9em;">
+                    For support, please also check our <a href="faq.html">FAQ page</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,32 +3,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About | NeuroPilot</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NeuroPilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>NeuroPilot</h1>
-    <p class="slogan">You build the dream. It builds the path.</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="papers.html">Papers</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
-<main>
-    <section class="hero">
-        <h2>Our Vision</h2>
-        <p>We believe every founder deserves a superintelligent assistant. NeuroPilot is not just a tool — it's a co-pilot for your journey to build the future.</p>
-        <p>As part of the Neuroverse initiative, we aim to empower ambitious minds with AI that evolves, remembers, and acts alongside you.</p>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-</footer>
+
+    <main class="section about-section">
+        <div class="container">
+            <h1 class="section-title text-center">About NeuroPilot</h1>
+            
+            <div class="mission">
+                <h2>Our Mission & Vision</h2>
+                <p>We’re building <strong>Neuroverse</strong> – an intelligent universe of collaborative AI agents for ambitious humans. NeuroPilot is the first step in this grand vision, designed to empower innovators, entrepreneurs, and creators by providing an AI co-pilot that truly understands the journey of building something new from the ground up.</p>
+                <div style="width:100%; height:200px; background:#333; display:flex; align-items:center; justify-content:center; margin-top:20px; border-radius:5px;"><em>Placeholder: Abstract Vision Graphic</em></div>
+            </div>
+
+            <div class="founder-declaration">
+                <h2>Founder's Declaration: The "AI Second Brain"</h2>
+                <p>Why did we build NeuroPilot? Because we believe the human mind, augmented by intelligent AI, can achieve extraordinary things. Traditional tools often fall short in managing the complexity and dynamism of modern innovation. We envision NeuroPilot as an "AI Second Brain" – a partner that not only helps you execute tasks but also assists in thinking, strategizing, and remembering crucial details.</p>
+                <p>It's about offloading cognitive burdens, so you can focus on your core vision and creativity. We are committed to building AI that is not just a tool, but a true collaborator in your ambitious endeavors.</p>
+                <div style="width:100%; height:200px; background:#333; display:flex; align-items:center; justify-content:center; margin-top:20px; border-radius:5px;"><em>Placeholder: Founder's Illustration or Conceptual Art</em></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

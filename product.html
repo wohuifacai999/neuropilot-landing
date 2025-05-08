@@ -3,37 +3,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product | NeuroPilot</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - NeuroPilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>NeuroPilot</h1>
-    <p class="slogan">You build the dream. It builds the path.</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="papers.html">Papers</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html" class="active">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
-<main>
-    <section class="hero">
-        <h2>Product Features</h2>
-        <ul>
-            <li><strong>🎯 Goal Decomposer:</strong> Break down your visions into structured, actionable steps.</li>
-            <li><strong>🧠 Memory Engine:</strong> Persistent memory for long-term contextual understanding.</li>
-            <li><strong>🗺️ Action Planner:</strong> Auto-generate prioritized execution paths.</li>
-            <li><strong>🔄 Multi-turn Dialogue:</strong> Conversational interface that evolves with your needs.</li>
-        </ul>
-        <p>Built for founders. Designed to think, remember, and execute like a second brain.</p>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-</footer>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title text-center">Our Product Features</h1>
+            <p class="text-center" style="max-width: 700px; margin: -20px auto 40px auto;">Discover the core modules that make NeuroPilot an indispensable AI co-pilot for startup builders.</p>
+
+            <div class="product-module">
+                <div class="product-module-image">Image Placeholder: Goal Decomposer Visual</div>
+                <div class="product-module-text">
+                    <h3>Goal Decomposer</h3>
+                    <p>Breaks down your ambitious startup visions into manageable tasks and milestones. NeuroPilot helps you see the forest AND the trees, ensuring you're always on the right track with clear, actionable steps.</p>
+                </div>
+            </div>
+
+            <div class="product-module">
+                <div class="product-module-image">Image Placeholder: Memory Engine Visual</div>
+                <div class="product-module-text">
+                    <h3>Memory Engine</h3>
+                    <p>Our persistent Memory Engine learns from every interaction, decision, and piece of data you provide. It remembers context, preferences, and project history to offer increasingly personalized and insightful assistance.</p>
+                </div>
+            </div>
+
+            <div class="product-module">
+                <div class="product-module-image">Image Placeholder: Action Planner Visual</div>
+                <div class="product-module-text">
+                    <h3>Action Planner</h3>
+                    <p>Translates decomposed goals into strategic action plans. It can suggest resource allocation, timelines, and potential dependencies, helping you move from idea to execution efficiently.</p>
+                </div>
+            </div>
+
+            <div class="product-module">
+                <div class="product-module-image">Image Placeholder: Multi-turn Dialogue Visual</div>
+                <div class="product-module-text">
+                    <h3>Multi-turn Dialogue</h3>
+                    <p>Engage in sophisticated, context-aware conversations. NeuroPilot understands nuances, asks clarifying questions, and collaborates with you iteratively to refine strategies and solve complex problems.</p>
+                </div>
+            </div>
+
+            <div class="architecture-placeholder">
+                <h2>System Architecture</h2>
+                <p>A detailed product architecture diagram will be placed here soon. This will illustrate how our core modules interact to create a seamless and intelligent experience.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

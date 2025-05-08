@@ -3,36 +3,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog | NeuroPilot</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - NeuroPilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-    <h1>NeuroPilot</h1>
-    <p class="slogan">You build the dream. It builds the path.</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="papers.html">Papers</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
-<main>
-    <section class="hero">
-        <h2>Founder Logs & Thought Pieces</h2>
-        <p>Here we share our build journey, insights, and lessons learned while constructing the future of AI-first companies.</p>
-        <ul>
-            <li><strong>🔍 Why We Built NeuroPilot</strong></li>
-            <li><strong>🧠 How Memory in AI Changes Everything</strong></li>
-            <li><strong>🚀 From Tasks to Execution: Our System Architecture</strong></li>
-        </ul>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
-</footer>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title text-center">NeuroPilot Blog</h1>
+            <p class="text-center" style="max-width: 700px; margin: -20px auto 40px auto;">Insights, updates, and stories from the NeuroPilot team. Explore the future of AI-assisted creation.</p>
+
+            <div class="article-list">
+                <article class="article-item">
+                    <div class="article-item-image-placeholder">Cover Image Placeholder</div>
+                    <h3>Why We Built NeuroPilot</h3>
+                    <p class="summary">Delving into the core motivations and the problems we aim to solve for entrepreneurs and innovators worldwide.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+
+                <article class="article-item">
+                    <div class="article-item-image-placeholder">Cover Image Placeholder</div>
+                    <h3>How Memory in AI Changes Everything</h3>
+                    <p class="summary">An exploration of the pivotal role of advanced memory systems in creating truly intelligent and adaptive AI co-pilots.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+
+                <article class="article-item">
+                    <div class="article-item-image-placeholder">Cover Image Placeholder</div>
+                    <h3>From Tasks to Execution: Our System Architecture</h3>
+                    <p class="summary">A high-level overview of the NeuroPilot system architecture and how its components work together seamlessly.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+                
+                <article class="article-item">
+                    <div class="article-item-image-placeholder">Cover Image Placeholder</div>
+                    <h3>The Future of Collaborative AI</h3>
+                    <p class="summary">Speculating on how AI agents will transform teamwork and individual productivity in the coming years.</p>
+                    <a href="#" class="read-more">Read More &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

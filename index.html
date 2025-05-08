@@ -4,35 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroPilot | You build the dream. It builds the path.</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>NeuroPilot - Your AI Co-pilot for Building Startups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="dark">
-    <header>
-        <h1>NeuroPilot</h1>
-        <p class="slogan">You build the dream. It builds the path.</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="product.html">Product</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="papers.html">Papers</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Neuro<span>Pilot</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section" style="background-image: url('images/hero-bg-placeholder.jpg');">
+        <div class="container">
+            <h1>NeuroPilot</h1>
+            <p class="subtitle">You build the dream. It builds the path.</p>
+            <p class="intro-text">Your AI co-pilot for building startups.</p>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Welcome to your AI Co-Pilot</h2>
-            <p>Startups need more than tools — they need a second brain. NeuroPilot helps you plan, remember, and build smarter.</p>
-            <form class="waitlist">
-                <input type="email" placeholder="Enter your email to join the waitlist" required>
-                <button type="submit">Join the Waitlist</button>
+
+    <section class="value-prop-section section">
+        <div class="container">
+            <h2 class="section-title">Core Advantages</h2>
+            <div class="value-prop-grid">
+                <div class="value-prop-item">
+                    <div class="icon-placeholder">💡</div>
+                    <h3>Structured Execution</h3>
+                    <p>NeuroPilot helps you break down complex goals into actionable steps, ensuring clarity and progress.</p>
+                </div>
+                <div class="value-prop-item">
+                    <div class="icon-placeholder">🧠</div>
+                    <h3>Memory Engine</h3>
+                    <p>Our advanced memory system retains context and learnings, making interactions more intelligent over time.</p>
+                </div>
+                <div class="value-prop-item">
+                    <div class="icon-placeholder">💬</div>
+                    <h3>Adaptive Dialogue</h3>
+                    <p>Engage in natural, multi-turn conversations to refine ideas, solve problems, and plan strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="waitlist-section section">
+        <div class="container">
+            <h2 class="section-title">Join the Waitlist</h2>
+            <p>Be the first to experience NeuroPilot and revolutionize your startup journey.</p>
+            <form action="YOUR_FORMSPREE_OR_OTHER_ENDPOINT" method="POST" class="waitlist-form">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Join Waitlist</button>
             </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+            <p style="font-size: 0.8em; margin-top:15px;">We respect your privacy. No spam, ever.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NeuroPilot. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
