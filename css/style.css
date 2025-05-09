@@ -202,3 +202,159 @@ html.dark .hero {
   flex-direction: column;
   align-items: center;
 }
+
+
+/* Dark mode 'What Founders Say' purple gradient */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #e0bbff 0%, #bb86fc 100%) !important;
+}
+
+
+/* Gradient text color for logo and slogan in dark mode */
+html.dark .logo svg text,
+html.dark .slogan {
+  background: linear-gradient(135deg, #e0bbff, #bb86fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Remove underline or border from slogan */
+html.dark .slogan {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+
+/* Hide underline from slogan and buttons */
+html.dark .slogan,
+html.dark .btn {
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* Gradient text for NeuroPilot brand in dark mode */
+html.dark .logo svg text {
+  fill: url(#neuro-gradient);
+}
+
+/* Add gradient definition inside SVG via JS or directly */
+
+
+/* Deep purple for 'What Founders Say' section in dark mode */
+html.dark .testimonials {
+  background: linear-gradient(135deg, #6c33a3 0%, #3e1f5c 100%) !important;
+}
+
+/* Light purple for hero (Welcome section) in dark mode */
+html.dark .hero {
+  background: linear-gradient(135deg, #e6ccff 0%, #c89aff 100%) !important;
+}
+
+
+/* Remove underline from slogan in all modes */
+.slogan {
+  text-decoration: none !important;
+  border: none !important;
+}
+
+
+/* Expandable feature details */
+.feature-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.feature-card.active .feature-details {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+
+/* Responsive Navbar */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 3.5rem;
+    top: 1.2rem;
+  }
+}
+
+
+/* Adjust nav toggle to be on the left in mobile view */
+@media (max-width: 768px) {
+  .nav-toggle {
+    left: 1.5rem;
+    right: auto;
+    color: #66ccff; /* soft blue */
+  }
+}
+
+
+/* Place nav-toggle truly at the left edge */
+@media (max-width: 768px) {
+  .nav-toggle {
+    left: 0;
+    padding-left: 0.5rem;
+  }
+}
+
+
+/* Refine nav-toggle: larger and vertically aligned with theme-toggle */
+@media (max-width: 768px) {
+  .nav-toggle {
+    font-size: 1.8rem;
+    top: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    line-height: 1;
+  }
+}
+
+
+/* Fine-tune nav-toggle vertical alignment to match theme toggle */
+@media (max-width: 768px) {
+  .nav-toggle {
+    top: 1.5rem;
+  }
+}
+
+
+/* Make case-cards expandable like feature-cards */
+.case-card .feature-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.case-card.active .feature-details {
+  max-height: 400px;
+  opacity: 1;
+  margin-top: 1rem;
+}

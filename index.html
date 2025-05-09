@@ -12,7 +12,8 @@
       <img src="assets/logo.svg" alt="NeuroPilot Logo">
       <span class="slogan">You build the dream. It builds the path.</span>
     </a>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+<ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="product.html">Product</a></li>
       <li><a href="about.html">About</a></li>
@@ -32,31 +33,39 @@
   <section id="features" class="features">
     <h2>Core Features</h2>
     <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Memory-Enabled AI</h3>
-        <p>Engage in multi-turn conversations with context awareness.</p>
-      </div>
+      
+<div class="feature-card" onclick="toggleFeature(this)">
+  <h3>Memory-Enabled AI</h3>
+  <p>Engage in multi-turn conversations with context awareness.</p>
+  <div class="feature-details">
+    <p>NeuroPilot doesn't just respond — it remembers.</p>
+    <p>When you speak, it listens with intention. It carries the threads of your thoughts, your worries, your ambitions — across every message you write.</p>
+    <p>Whether you're building a dream, solving a challenge, or just thinking aloud, it stays with you. No need to repeat. No need to explain again.</p>
+    <p>Like a thoughtful partner, it holds space for you — and your unfolding journey.</p>
+  </div>
+</div>
+
       
 <div class="feature-card" onclick="toggleFeature(this)">
   <h3>Goal Decomposer</h3>
-  <p>Break down your ideas into your next 3 steps.</p>
+  <p>Break down business objectives into actionable steps.</p>
   <div class="feature-details">
-    <p>Not sure where to start? Most people aren’t.</p>
-    <p>NeuroPilot helps you go from “I want to build something” to “I know what to do next.”</p>
-    <p>Whether you're starting a store, a service, or a product — it turns your rough ideas into structured, doable steps.</p>
-    <p>You don’t need the whole plan. You just need your next move.</p>
+    <p>Big visions often feel overwhelming.</p>
+    <p>NeuroPilot listens to what you want to build — and helps you shape it into something real.</p>
+    <p>It quietly turns ambition into action: untangling complexity, clarifying direction, and offering the next clear step forward.</p>
+    <p>So you can stop circling your ideas — and start moving.</p>
   </div>
 </div>
 
       
 <div class="feature-card" onclick="toggleFeature(this)">
   <h3>Action Planner</h3>
-  <p>Know what to do — and in what order.</p>
+  <p>Receive optimized execution plans to achieve your goals.</p>
   <div class="feature-details">
-    <p>When your goal is clear, it’s time to move.</p>
-    <p>But what should you tackle first? How do you stay consistent when there’s too much to do?</p>
-    <p>NeuroPilot helps you prioritize the right tasks — and shape them into weekly plans that feel doable, not overwhelming.</p>
-    <p>No more decision fatigue. Just calm, focused momentum.</p>
+    <p>Once you know where you're going, NeuroPilot helps you move.</p>
+    <p>It doesn't just suggest — it plans. Thoughtfully. Step by step.</p>
+    <p>With timelines, milestones, and logic that adapts to your real constraints.</p>
+    <p>Like a co-pilot who helps you stop guessing — and start executing.</p>
   </div>
 </div>
 
@@ -66,44 +75,62 @@
   <section id="use-cases" class="use-cases">
     <h2>Use Cases</h2>
     <div class="case-grid">
-      <div class="case-card">
-        <h3>Product Roadmap</h3>
-        <p>Quickly decompose product goals into executable roadmaps.</p>
-      </div>
-      <div class="case-card">
-        <h3>Team Collaboration</h3>
-        <p>Seamlessly coordinate cross-team communication by aligning tasks and progress.</p>
-      </div>
-      <div class="case-card">
-        <h3>Pitch Preparation</h3>
-        <p>Automatically organize key data and pitch points to aid fundraising.</p>
-      </div>
+      
+<div class="case-card" onclick="toggleFeature(this)">
+  <h3>Product Roadmap</h3>
+  <p>Quickly decompose product goals into executable roadmaps.</p>
+  <div class="feature-details">
+    <p>You know what you want to build — but the steps feel fuzzy.</p>
+    <p>NeuroPilot helps you zoom out and zoom in: from the big picture to the next clear sprint.</p>
+    <p>Whether it's your first MVP or your next version, it turns ideas into execution timelines you can trust.</p>
+    <p>So you don’t just imagine products — you ship them.</p>
+  </div>
+</div>
+
+      
+<div class="case-card" onclick="toggleFeature(this)">
+  <h3>Team Collaboration</h3>
+  <p>Seamlessly coordinate cross-team communication by aligning tasks and progress.</p>
+  <div class="feature-details">
+    <p>You’re not building alone. But it can still feel like no one’s on the same page.</p>
+    <p>NeuroPilot helps you align conversations with actions — across roles, tools, and timelines.</p>
+    <p>It turns scattered threads into shared progress.</p>
+    <p>So your team doesn’t just move — it moves together.</p>
+  </div>
+</div>
+
+      
+<div class="case-card" onclick="toggleFeature(this)">
+  <h3>Pitch Preparation</h3>
+  <p>Automatically organize key data and pitch points to aid fundraising.</p>
+  <div class="feature-details">
+    <p>Fundraising is hard. But preparing your story shouldn't be.</p>
+    <p>NeuroPilot helps you organize the numbers, milestones, and mission — into a clear, compelling narrative.</p>
+    <p>No more last-minute slides or lost details.</p>
+    <p>So when it’s time to pitch, you can focus on confidence — not chaos.</p>
+  </div>
+</div>
+
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials">
-    <h2>What Founders Say</h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <p>"NeuroPilot helped me complete my product's MVP roadmap in two weeks, doubling my efficiency!"</p>
-        <span>— Alice, Startup CEO</span>
-      </div>
-      <div class="testi-card">
-        <p>"Before every team meeting, I just generate the agenda with one click—it's time-saving and efficient."</p>
-        <span>— Bob, CTO</span>
-      </div>
+  
+<section id="testimonials" class="testimonials">
+  <h2>What Founders Say</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p>“I was juggling investor updates, hiring plans, and product sprints — until NeuroPilot turned my chaos into clarity.”</p>
+      <span>— Elena Chen, Founder @ Dotsight</span>
     </div>
-  </section>
+    <div class="testi-card">
+      <p>“We use it before every Monday standup. The AI agenda suggestions save our team 3 hours a week.”</p>
+      <span>— Marco Silva, CTO @ Loopwave</span>
+    </div>
+  </div>
+</section>
+
 
   <footer class="footer">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="product.html">Product</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="waitlist.html">Join Waitlist</a>
-    </nav>
     <p>&copy; 2025 Neuroverse. All rights reserved.</p>
   </footer>
 
