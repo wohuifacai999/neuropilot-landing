@@ -358,3 +358,14 @@ html.dark .hero {
   opacity: 1;
   margin-top: 1rem;
 }
+
+
+.case-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.case-row .case-card {
+  flex: 1 1 calc(50% - 1rem);
+}
