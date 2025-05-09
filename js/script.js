@@ -46,17 +46,3 @@ if (contactForm) {
     this.reset();
   });
 }
-
-
-function toggleFeature(card) {
-  card.classList.toggle('active');
-}
-
-
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-}
