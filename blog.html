@@ -6,6 +6,30 @@
     <title>Lab - NeuroPilot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  form input[type="email"] {
+    width: 90% !important;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  form button {
+    width: auto;
+    max-width: 90%;
+  }
+}
+
+
         body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; }
         h1, h2, h3 { color: #ff6fd8; }
         h1 { font-size: 2.2em; margin-top: 1em; }
@@ -23,6 +47,30 @@
     </style>
 
 <style>
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  form input[type="email"] {
+    width: 90% !important;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  form button {
+    width: auto;
+    max-width: 90%;
+  }
+}
+
+
 body.fade {
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
@@ -52,23 +100,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <div class="header">
     <img src="logo.png" class="logo" alt="logo">
-    <div class="brand">NeuroPilot<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+    <div class="brand">NeuroPilot
 </div>
-    <div class="slogan">You build the dream. It builds the path.<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
-</div>
-<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+    <div class="slogan">You build the dream. It builds the path.
 </div>
 
-<div class="navbar" style="text-align:center; margin-bottom: 40px;">
+</div>
+
+
+
+
+<div class="navbar" style="display: flex; flex-wrap: wrap; justify-content: center;" style="text-align:center; margin-bottom: 40px;">
     <a href="index.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Home</a>
     <a href="about.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">About</a>
     <a href="product.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Product</a>
     <a href="faq.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">FAQ</a>
     <a href="careers.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Careers</a>
     <a href="contact.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Contact</a>
-    <a href="blog.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Lab</a>
-<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+    <a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
 </div>
+
+
+
 
 <h1>NeuroPilot Lab</h1>
 <p>Explore the thoughts, experiments, and breakthroughs behind the product. This is where we share what we’re building, why it matters, and what’s next.</p>
@@ -76,19 +129,19 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="post-preview">
     <h2><a href="#">🧠 Designing a Co-Pilot for the Mind</a></h2>
     <p>A behind-the-scenes look at how we engineered NeuroPilot to work more like a partner than a chatbot—and why memory, context, and feedback loops are the future.</p>
-<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+
 </div>
 
 <div class="post-preview">
     <h2><a href="#">🚀 Why Solo Execution Is the Next Great Movement</a></h2>
     <p>From freelancers to solo-founders, the new age of creators is here. Here’s why tools like NeuroPilot are essential to this shift.</p>
-<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+
 </div>
 
 <div class="post-preview">
     <h2><a href="#">🧪 Building with Real Users, Not Hypotheticals</a></h2>
     <p>We launched a private MVP and watched what users did—not just what they said. Here's what surprised us, and how it shaped the roadmap.</p>
-<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+
 </div>
 
 </body>

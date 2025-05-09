@@ -6,6 +6,30 @@
   <title>Join NeuroPilot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  form input[type="email"] {
+    width: 90% !important;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+  form button {
+    width: auto;
+    max-width: 90%;
+  }
+}
+
+
     body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 800px; margin: auto; line-height: 1.7; text-align: center; }
     h1 { color: #ff6fd8; font-size: 2.2em; margin-bottom: 20px; }
     p { color: #ccc; font-size: 1.1em; margin-bottom: 30px; }
