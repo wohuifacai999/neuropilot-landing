@@ -1,9 +1,0 @@
-/* Dark mode bottom gradient override */
-html.dark .testimonials {
-  background: linear-gradient(135deg, #e0bbff 0%, #bb86fc 100%);
-}
-
-/* Dark mode logo color override */
-html.dark .logo svg text {
-  fill: #2196f3;
-}
