@@ -1,139 +1,163 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroPilot - Home</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>NeuroPilot - You build the dream. It builds the path.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; }
+        h1, h2 { color: #ff6fd8; }
+        h1 { font-size: 2em; margin-top: 2em; }
+        h2 { font-size: 1.5em; margin-top: 1.5em; }
+        img { max-width: 100%; margin: 20px 0; border-radius: 12px; box-shadow: 0 4px 10px rgba(255,255,255,0.1); }
+        a.button { display: inline-block; background: linear-gradient(135deg, #ff6fd8, #3813c2); padding: 12px 20px; border-radius: 25px; color: white; text-decoration: none; font-weight: bold; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .logo { width: 120px; vertical-align: middle; margin-bottom: 10px; }
+        .brand { font-size: 2em; font-weight: bold; color: #ff6fd8; display: block; }
+        .slogan { font-size: 1.1em; color: #ccc; margin-top: 5px; }
+        .cta { text-align: center; margin-top: 40px; }
+    </style>
+
+<style>
+body.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+body.fade-loaded {
+    opacity: 1;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-loaded");
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener("click", e => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("http")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-loaded");
+                setTimeout(() => window.location.href = href, 300);
+            }
+        });
+    });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form[action*='formspree']");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.innerHTML = "<p style='color:#ff6fd8; font-weight:bold; font-size:1.2em;'>🎉 Thanks for joining the waitlist!</p>";
+        } else {
+          form.innerHTML = "<p style='color:red;'>Oops! There was a problem. Please try again.</p>";
+        }
+      });
+    });
+  }
+});
+</script>
+
 </head>
-<body>
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.svg" alt="NeuroPilot Logo">
-      <span class="slogan">You build the dream. It builds the path.</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-<ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="waitlist.html">Join Waitlist</a></li>
-    </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
-  </nav>
+<body class="fade">
 
-  <header class="hero">
-    <h1>Welcome to NeuroPilot</h1>
-    <p>Your AI second brain for founders</p>
-    <a href="waitlist.html" class="btn">Join the Waitlist</a>
-  </header>
-
-  <section id="features" class="features">
-    <h2>Core Features</h2>
-    <div class="feature-grid">
-      
-<div class="feature-card" onclick="toggleFeature(this)">
-  <h3>Memory-Enabled AI</h3>
-  <p>Engage in multi-turn conversations with context awareness.</p>
-  <div class="feature-details">
-    <p>NeuroPilot doesn't just respond — it remembers.</p>
-    <p>When you speak, it listens with intention. It carries the threads of your thoughts, your worries, your ambitions — across every message you write.</p>
-    <p>Whether you're building a dream, solving a challenge, or just thinking aloud, it stays with you. No need to repeat. No need to explain again.</p>
-    <p>Like a thoughtful partner, it holds space for you — and your unfolding journey.</p>
-  </div>
+<div class="header">
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="brand">NeuroPilot<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+    <div class="slogan">You build the dream. It builds the path.<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
 </div>
 
-      
-<div class="feature-card" onclick="toggleFeature(this)">
-  <h3>Goal Decomposer</h3>
-  <p>Break down business objectives into actionable steps.</p>
-  <div class="feature-details">
-    <p>Big visions often feel overwhelming.</p>
-    <p>NeuroPilot listens to what you want to build — and helps you shape it into something real.</p>
-    <p>It quietly turns ambition into action: untangling complexity, clarifying direction, and offering the next clear step forward.</p>
-    <p>So you can stop circling your ideas — and start moving.</p>
-  </div>
+<div class="navbar" style="text-align:center; margin-bottom: 40px;">
+    <a href="index.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">About</a>
+    <a href="product.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Product</a>
+    <a href="faq.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">FAQ</a>
+    <a href="careers.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Careers</a>
+    <a href="contact.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Contact</a>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
 </div>
 
-      
-<div class="feature-card" onclick="toggleFeature(this)">
-  <h3>Action Planner</h3>
-  <p>Receive optimized execution plans to achieve your goals.</p>
-  <div class="feature-details">
-    <p>Once you know where you're going, NeuroPilot helps you move.</p>
-    <p>It doesn't just suggest — it plans. Thoughtfully. Step by step.</p>
-    <p>With timelines, milestones, and logic that adapts to your real constraints.</p>
-    <p>Like a co-pilot who helps you stop guessing — and start executing.</p>
-  </div>
+<h1>🧠 Are you stuck between dreaming and doing?</h1>
+<p>You're not lazy—you just don’t have the right partner to move from vision to action.</p>
+<ul>
+<li>You want to start something but keep telling yourself “it’s not the right time.”</li>
+<li>You try AI tools, courses, lists... but nothing sticks past day 3.</li>
+<li>You feel that fire inside, but every step feels tangled.</li>
+</ul>
+<img src="image_c.png" alt="emotional workplace moment">
+
+<h2>🧩 It wasn't meant to be public</h2>
+<p>NeuroPilot was originally built for an internal “extreme productivity experiment.” It turned regular team members into founder-level operators.</p>
+<p>One intern—with zero experience—used it to launch a complete sub-brand in just 6 weeks: strategy, content, systems, everything. What used to take 12 people now took just one... plus NeuroPilot.</p>
+
+<h2>🔥 Sound familiar?</h2>
+<ul>
+<li>You've brainstormed ideas for months, but still haven’t started.</li>
+<li>Your Notion board is full, but your progress is empty.</li>
+<li>You don't need another idea—you need something to walk with you.</li>
+</ul>
+<img src="image_a.png" alt="freelance and side hustle options">
+
+<h2>🧠 How did that company use it?</h2>
+<ul>
+<li>Each morning: automatic progress recap + daily goal generation</li>
+<li>Each goal: instantly broken into timelines, priorities, and checklists</li>
+<li>Each delay: realigned with rhythm recommendations</li>
+</ul>
+<p>It’s not just AI—it’s your invisible founding team.</p>
+
+<h2>🚀 Why open it now?</h2>
+<p>We’re launching a private beta for 500 people—not browsers, but builders.</p>
+<ul>
+<li>If you're ready to escape the 9–5 loop</li>
+<li>If you're launching a side project or dream business</li>
+<li>If you're building your personal momentum engine</li>
+</ul>
+<p>1,200+ are already on the waitlist. We're selecting only the most committed users.</p>
+
+<h2>🎯 What happens after you join?</h2>
+<p><strong>Day 1</strong>: You type a goal. NeuroPilot builds your roadmap—step by step.<br>
+<strong>Day 3</strong>: You fall behind. It adjusts the plan, lightens the load, keeps the momentum.<br>
+<strong>Day 10</strong>: You’re moving. It drafts your pitch deck and writes an email to your first customer.</p>
+<img src="image_b.png" alt="course planning and productivity breakdown">
+
+<div class="cta">
+    
+
+<form action="https://formspree.io/f/mgvkzkyl" method="POST" style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+  <input type="email" name="email" placeholder="Enter your email" required
+         style="padding: 14px 20px; border-radius: 25px; border: none; font-size: 1.1em; width: 300px; max-width: 90%; margin-right: 12px;">
+  <button type="submit" style="background: linear-gradient(135deg, #ff6fd8, #3813c2); color: white; padding: 14px 28px; font-size: 1.1em; border-radius: 30px; border: none; font-weight: bold; cursor: pointer;">
+    👉 Join the Waitlist
+  </button>
+</form>
+
+
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
 </div>
 
-    </div>
-  </section>
+<h2>💡 It’s not a platform. It’s your cognitive co-pilot.</h2>
+<p>Tell it where you want to go. It breaks the path, pushes you forward, adapts to your resistance, and recalculates when you’re lost.</p>
+<p>When you're tired—it thinks for you. When you're stuck—it shifts strategy. When you're distracted—it brings you back.</p>
 
-  <section id="use-cases" class="use-cases">
-    <h2>Use Cases</h2>
-    <div class="case-grid">
-      
-<div class="case-card" onclick="toggleFeature(this)">
-  <h3>Product Roadmap</h3>
-  <p>Quickly decompose product goals into executable roadmaps.</p>
-  <div class="feature-details">
-    <p>You know what you want to build — but the steps feel fuzzy.</p>
-    <p>NeuroPilot helps you zoom out and zoom in: from the big picture to the next clear sprint.</p>
-    <p>Whether it's your first MVP or your next version, it turns ideas into execution timelines you can trust.</p>
-    <p>So you don’t just imagine products — you ship them.</p>
-  </div>
-</div>
-
-      
-<div class="case-card" onclick="toggleFeature(this)">
-  <h3>Team Collaboration</h3>
-  <p>Seamlessly coordinate cross-team communication by aligning tasks and progress.</p>
-  <div class="feature-details">
-    <p>You’re not building alone. But it can still feel like no one’s on the same page.</p>
-    <p>NeuroPilot helps you align conversations with actions — across roles, tools, and timelines.</p>
-    <p>It turns scattered threads into shared progress.</p>
-    <p>So your team doesn’t just move — it moves together.</p>
-  </div>
-</div>
-
-      
-<div class="case-card" onclick="toggleFeature(this)">
-  <h3>Pitch Preparation</h3>
-  <p>Automatically organize key data and pitch points to aid fundraising.</p>
-  <div class="feature-details">
-    <p>Fundraising is hard. But preparing your story shouldn't be.</p>
-    <p>NeuroPilot helps you organize the numbers, milestones, and mission — into a clear, compelling narrative.</p>
-    <p>No more last-minute slides or lost details.</p>
-    <p>So when it’s time to pitch, you can focus on confidence — not chaos.</p>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-<section id="testimonials" class="testimonials">
-  <h2>What Founders Say</h2>
-  <div class="testi-grid">
-    <div class="testi-card">
-      <p>“I was juggling investor updates, hiring plans, and product sprints — until NeuroPilot turned my chaos into clarity.”</p>
-      <span>— Elena Chen, Founder @ Dotsight</span>
-    </div>
-    <div class="testi-card">
-      <p>“We use it before every Monday standup. The AI agenda suggestions save our team 3 hours a week.”</p>
-      <span>— Marco Silva, CTO @ Loopwave</span>
-    </div>
-  </div>
-</section>
+<h2>🧬 Join the future of solo execution</h2>
+<p>You don’t need to know AI. You don’t need a perfect business plan. You just need curiosity, a spark, and the will to start.</p>
 
 
-  <footer class="footer">
-    <p>&copy; 2025 Neuroverse. All rights reserved.</p>
-  </footer>
 
-  <script src="js/script.js"></script>
+
 </body>
 </html>

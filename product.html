@@ -1,75 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product - NeuroPilot</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Product - NeuroPilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; }
+        h1, h2 { color: #ff6fd8; }
+        h1 { font-size: 2.2em; margin-top: 1em; }
+        h2 { font-size: 1.4em; margin-top: 1.5em; color: #ccc; }
+        .section { margin-bottom: 2.5em; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .logo { width: 100px; margin-bottom: 10px; }
+        .brand { font-size: 2em; font-weight: bold; color: #ff6fd8; margin-bottom: 8px; }
+        .slogan { font-size: 1.1em; color: #aaa; }
+        p { margin-bottom: 1em; }
+    </style>
+
+<style>
+body.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+body.fade-loaded {
+    opacity: 1;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-loaded");
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener("click", e => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("http")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-loaded");
+                setTimeout(() => window.location.href = href, 300);
+            }
+        });
+    });
+});
+</script>
+
 </head>
-<body class="page">
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.svg" alt="NeuroPilot Logo">
-      <span class="slogan">You build the dream. It builds the path.</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="waitlist.html">Join Waitlist</a></li>
-    </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
-  </nav>
+<body class="fade">
 
-  <main class="content">
-    <section class="product-hero">
-      <h1>What if your second brain... actually remembered everything?</h1>
-      <p>Every thread. Every goal. Every mistake. Until it’s perfect.</p>
-      <a href="waitlist.html" class="btn">Access Founder Mode</a>
-    </section>
+<div class="header">
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="brand">NeuroPilot<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+    <div class="slogan">You build the dream. It builds the path.<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
 
-    <section class="product-core">
-      <h2>What You Get (and What They Don’t)</h2>
-      <ul>
-        <li>🧠 Multi-turn Memory with Invisible Threading</li>
-        <li>🪄 Goal-to-Plan Conversion, context-aware</li>
-        <li>🚀 Founder Mode: Explain less. Do more.</li>
-      </ul>
-    </section>
+<div class="navbar" style="text-align:center; margin-bottom: 40px;">
+    <a href="index.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">About</a>
+    <a href="product.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Product</a>
+    <a href="faq.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">FAQ</a>
+    <a href="careers.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Careers</a>
+    <a href="contact.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Contact</a>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
 
-    <section class="product-preview">
-      <h2>It looks like magic. But it’s made for execution.</h2>
-      <div class="mockup-chat">
-        <p><strong>You:</strong> “Can you recap my week and generate 3 investor slides?”</p>
-        <p><strong>NeuroPilot:</strong> “Done. Here’s your summary, traction highlights, and updated growth map.”</p>
-        <a href="waitlist.html" class="btn">Try It First</a>
-      </div>
-    </section>
+<h1>What You Can Do With NeuroPilot</h1>
+<p>Even in its MVP phase, NeuroPilot is already a powerful solo execution engine. Here’s what it can help you do—today.</p>
 
-    <section class="testimonials">
-      <h2>What Founders Say</h2>
-      <div class="testi-grid">
-        <div class="testi-card">
-          <p>“It just knew what I meant — and what I needed next. Feels like my brain, upgraded.”</p>
-          <span>— Nina Kapoor, Cofounder @ Axion</span>
-        </div>
-        <div class="testi-card">
-          <p>“The first time I used it, I rewrote my entire roadmap in 45 minutes. No fluff.”</p>
-          <span>— Leo Tran, Indie Builder</span>
-        </div>
-      </div>
-    </section>
+<div class="section">
+    <h2>🧠 Goal Decomposer</h2>
+    <p>You input an idea. NeuroPilot turns it into a clear roadmap—broken down by phases, timelines, and weekly tasks.</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
 
-    <section class="product-cta">
-      <h2>Still reading?</h2>
-      <p>This is the part where you stop thinking — and start building smarter.</p>
-      <a href="waitlist.html" class="btn">Join the Waitlist</a>
-    </section>
-  </main>
 
-  <script src="js/script.js"></script>
+
+<div class="section">
+    <h2>📅 Action Planner</h2>
+    <p>It doesn’t just list what to do. It creates daily and weekly action items, prioritized by effort and impact—ready to execute.</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+
+
+<div class="section">
+    <h2>🎯 Progress Tracker</h2>
+    <p>NeuroPilot monitors what’s done, what’s delayed, and what’s dragging your momentum. Then it adapts your plan automatically.</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+
+
+<div class="section">
+    <h2>💬 Intelligent Dialogue</h2>
+    <p>Built-in multi-turn memory lets you hold deeper conversations with your AI assistant—no more starting from scratch every time.</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+
+
+<div class="section">
+    <h2>🛠️ Built for Solo Operators</h2>
+    <p>You don’t need to hire. You don’t need to delegate. You just need to type—and NeuroPilot thinks, organizes, and executes with you.</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+
+
 </body>
 </html>

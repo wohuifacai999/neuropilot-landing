@@ -1,43 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroPilot - About</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>About - NeuroPilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; }
+        h1, h2 { color: #ff6fd8; }
+        h1 { font-size: 2.2em; margin-top: 1em; }
+        h2 { font-size: 1.4em; margin-top: 1.5em; color: #ccc; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .logo { width: 100px; margin-bottom: 10px; }
+        .brand { font-size: 2em; font-weight: bold; color: #ff6fd8; margin-bottom: 8px; }
+        .slogan { font-size: 1.1em; color: #aaa; }
+        p { margin-bottom: 1.5em; }
+    </style>
+
+<style>
+body.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+body.fade-loaded {
+    opacity: 1;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-loaded");
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener("click", e => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("http")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-loaded");
+                setTimeout(() => window.location.href = href, 300);
+            }
+        });
+    });
+});
+</script>
+
 </head>
-<body class="page">
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.svg" alt="NeuroPilot Logo">
-      <span class="slogan">You build the dream. It builds the path.</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="waitlist.html">Join Waitlist</a></li>
-    </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
-  </nav>
-  <main class="content">
-    <h1>About NeuroPilot</h1>
-    <p>NeuroPilot is part of the Neuroverse ecosystem, dedicated to building AI solutions that empower founders to achieve their dreams. Our mission is to create tools that provide clarity, direction, and actionable insights.</p>
-    <p>Founded in 2025, our vision is to become the ultimate AI second brain for entrepreneurs worldwide.</p>
-  </main>
-  <footer class="footer">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="product.html">Product</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="waitlist.html">Join Waitlist</a>
-    </nav>
-    <p>&copy; 2025 Neuroverse. All rights reserved.</p>
-  </footer>
-  <script src="js/script.js"></script>
+<body class="fade">
+
+<div class="header">
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="brand">NeuroPilot<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+    <div class="slogan">You build the dream. It builds the path.<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+<div class="navbar" style="text-align:center; margin-bottom: 40px;">
+    <a href="index.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">About</a>
+    <a href="product.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Product</a>
+    <a href="faq.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">FAQ</a>
+    <a href="careers.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Careers</a>
+    <a href="contact.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Contact</a>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+<h1>Our Origin</h1>
+<p>NeuroPilot wasn’t designed for the public. It was born in the labs of a startup obsessed with human productivity and self-actualization.</p>
+<p>The original prototype was built to help our own team move faster, think clearer, and ship products with founder-level precision—even if they weren’t founders.</p>
+
+<h2>The Turning Point</h2>
+<p>One intern used it to build a full brand in 6 weeks—strategy, content, tech stack, all of it. What used to take 12 people, took just one… and NeuroPilot.</p>
+<p>That’s when we knew: this wasn’t just a tool. It was a new kind of teammate—one that anyone could use to turn ideas into action, without the usual chaos.</p>
+
+<h2>Why We Exist</h2>
+<p>There are millions of people with dreams stuck in Notion boards and browser tabs. We're here to turn those dreams into daily progress—and ultimately, reality.</p>
+
+<h2>Our Belief</h2>
+<p>You don’t need to be an expert. You don’t need a cofounder. You just need something that walks with you, step by step, from uncertainty to clarity to execution.</p>
+<p>That’s what NeuroPilot is for. Your second self. Your silent partner. Your path builder.</p>
+
 </body>
 </html>

@@ -1,50 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroPilot - Contact</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Contact - NeuroPilot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #111; color: #eee; padding: 40px; max-width: 900px; margin: auto; line-height: 1.7; }
+        h1, h2 { color: #ff6fd8; }
+        h1 { font-size: 2.2em; margin-top: 1em; }
+        p { margin-bottom: 1.5em; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .logo { width: 100px; margin-bottom: 10px; }
+        .brand { font-size: 2em; font-weight: bold; color: #ff6fd8; margin-bottom: 8px; }
+        .slogan { font-size: 1.1em; color: #aaa; }
+        .contact-box { background: #222; border-radius: 12px; padding: 30px; box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+    </style>
+
+<style>
+body.fade {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+body.fade-loaded {
+    opacity: 1;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-loaded");
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener("click", e => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("http")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-loaded");
+                setTimeout(() => window.location.href = href, 300);
+            }
+        });
+    });
+});
+</script>
+
 </head>
-<body class="page">
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.svg" alt="NeuroPilot Logo">
-      <span class="slogan">You build the dream. It builds the path.</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="product.html">Product</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="waitlist.html">Join Waitlist</a></li>
-    </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
-  </nav>
-  <main class="content">
-    <h1>Contact Us</h1>
-    <form id="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </main>
-  <footer class="footer">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="product.html">Product</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="waitlist.html">Join Waitlist</a>
-    </nav>
-    <p>&copy; 2025 Neuroverse. All rights reserved.</p>
-  </footer>
-  <script src="js/script.js"></script>
+<body class="fade">
+
+<div class="header">
+    <img src="logo.png" class="logo" alt="logo">
+    <div class="brand">NeuroPilot<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+    <div class="slogan">You build the dream. It builds the path.<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+<div class="navbar" style="text-align:center; margin-bottom: 40px;">
+    <a href="index.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">About</a>
+    <a href="product.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Product</a>
+    <a href="faq.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">FAQ</a>
+    <a href="careers.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Careers</a>
+    <a href="contact.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Contact</a>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+<h1>Contact Us</h1>
+<p>If you're a curious user, a potential partner, a member of the press, or just someone who wants to say hello — we’d love to hear from you.</p>
+
+
+<div class="contact-box">
+    <p><strong>Email:</strong> facai998996@gmail.com</p>
+    <p><strong>Twitter:</strong> <a href="https://twitter.com/neuropilotAI" target="_blank" style="color:#ff6fd8;">@neuropilotAI</a></p>
+    <p><strong>Partnerships:</strong> facai998996@gmail.com</p>
+    <p><strong>Media:</strong> @neuropilot.ai</p>
+<a href="join.html" style="color:#ff6fd8; margin: 0 15px; text-decoration:none;">Join</a>
+</div>
+
+
+
+
 </body>
 </html>
